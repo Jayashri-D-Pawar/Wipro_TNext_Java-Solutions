@@ -1,0 +1,23 @@
+
+public class CheckAplhaNumeric {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char a = '@';
+		if(a>='A'&&a<='Z'||a>='a'&&a<='z')
+		{
+			System.out.println("Alphabet");
+		}
+		else if(a>=48&&a<=57)
+		{
+			System.out.println("Digit");
+		}
+		else if(a>=33&&a<=47||a>=58&&a<=68)
+		{
+			System.out.println("Special Character");
+		}
+			
+
+	}
+
+}
