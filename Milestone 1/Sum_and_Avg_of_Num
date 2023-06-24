@@ -1,0 +1,19 @@
+
+public class SumAvgOfNum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[] = {1,2,3,4};
+		int sum=0;
+		int avg =0;
+		for(int i=0;i<arr.length;i++)
+		{
+			sum = sum + arr[i];
+			avg = sum/arr.length;
+		}
+		System.out.println("Sum of all digit "+sum);
+		System.out.println("Average is "+avg);
+	
+	}
+
+}
