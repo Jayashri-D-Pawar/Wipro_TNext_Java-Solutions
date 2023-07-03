@@ -1,0 +1,28 @@
+int paliPossible(int input1){
+
+boolean again =  isPossible(input1);
+    if(again){
+        return 2;
+    }else{
+        return 1;
+    }
+   
+}
+boolean isPossible(int input1){
+    Map<Integer,Integer> digitCount = new HashMap<>();
+    int num = Math.abs(input1);
+    while(num!=0){
+        int digit = num%10;
+        digitCount.put(digit, digitCount.getOrDefault(digit, 0)+1);
+        num /=10;
+        
+    }
+    int oddocc = 0;
+    for(int count:digitCount.values()){
+        if(count%2 !=0){
+            oddocc++;
+        }
+    }
+        return oddocc <=1;
+    }
+
