@@ -1,0 +1,26 @@
+
+int FindNon-RepeatedDigitsCount(int input1){
+    int count = CheckCount(input1);
+    
+                return count;  
+            
+ }
+ int CheckCount(int number){
+        int count =0;
+        Map<Integer,Integer> digitStore = new HashMap<>();
+        while(number!=0){
+            int unit = number%10;
+            digitStore.put(unit, digitStore.getOrDefault(unit, 0)+1);
+           // digitStore.put(unit, digitStore.getOrDefault(unit, 0)+1);
+            number /=10;
+            
+        }
+        for(int i:digitStore.keySet())
+        {
+            if(digitStore.get(i)==1){
+                count++;
+            }
+        }        
+        return count;
+    }
+}
