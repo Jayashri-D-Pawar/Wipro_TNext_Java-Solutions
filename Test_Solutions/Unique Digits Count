@@ -1,0 +1,29 @@
+
+  int UniqueDigitCount(int input1){
+      int count = CheckUniqueDigits(input1);
+
+        return count;
+        
+        }
+
+  int CheckUniqueDigits(int number){
+    Set<Integer> digitSet = new HashSet<>();
+    int cont=0;
+    while(number!=0){
+      int unit = number%10;
+    if(digitSet.contains(unit)){
+      
+    }
+    else{
+        cont++;
+        digitSet.add(unit);
+    }
+        number /=10;
+    }
+    
+    
+    return cont;
+  
+  
+  }
+
