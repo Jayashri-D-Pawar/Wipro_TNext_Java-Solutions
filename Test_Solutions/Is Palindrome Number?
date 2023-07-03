@@ -1,0 +1,19 @@
+int checkPalindrom(int input1)
+{
+    int evn = 0, odd = 0;
+    while(input1!=0){
+        int no = input1%10;
+        if(no%2==0){
+            evn+=no;
+        }
+        else{
+            odd+=no;
+        }
+        input1/=10;
+    }
+    if(input2.equals("even")){
+        return evn;
+    }else{
+        return odd;
+    }
+}
